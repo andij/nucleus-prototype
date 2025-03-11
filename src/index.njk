@@ -1,0 +1,21 @@
+---
+title: Nucleus Prototype
+layout: vanilla
+---
+
+<ns-panel decoration="slate">
+  <div>
+    <h1>{{ title }}</h1>
+    <p class="p-feature">Development and testing environment for Nucleus components, experiments and support.</p>
+  </div>
+  <ns-column auto role="navigation" aria-label="Main">
+    <ns-card type="nav">
+      <h2 slot="heading" class="h4">Pages</h2>
+      <ul slot="paragraph">
+        {%- for page in collections.pages | sortByFilename %}
+        <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </ns-card>
+  </ns-column>
+</ns-panel>
