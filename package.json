@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "clear": "rm -rf node_modules"
+    "clear": "rm -rf node_modules && rm -rf docs"
   },
   "keywords": [],
   "author": "",
