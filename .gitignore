@@ -1,0 +1,8 @@
+# compiled output
+/docs
+
+# dependencies
+/node_modules
+
+# macOS
+.DS_Store
