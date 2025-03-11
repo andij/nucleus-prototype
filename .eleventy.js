@@ -2,7 +2,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const path = require('path');
 
 module.exports = function (eleventyConfig) {
-  // Copy `src/assets/img` to `docs/assets/img`
+  // Copy `src/assets/img` to `_site/assets/img`
   eleventyConfig.addPassthroughCopy("src/assets/img");
 
   // https://www.11ty.dev/docs/plugins/navigation/
@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "docs",
+      output: "_site",
       includes: "_includes",
       layouts: "_layouts",
     },
