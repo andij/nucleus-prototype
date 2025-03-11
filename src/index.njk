@@ -13,7 +13,7 @@ layout: vanilla
       <h2 slot="heading" class="h4">Pages</h2>
       <ul slot="paragraph">
         {%- for page in collections.pages | sortByFilename %}
-        <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
+        <li><a href="{{ page.url | url }}">{{ page.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
     </ns-card>
